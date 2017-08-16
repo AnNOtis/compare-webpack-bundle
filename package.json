@@ -1,0 +1,25 @@
+{
+  "name": "compare-webpack-bundle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node _scripts/build-all.js",
+    "test": "node _scripts/create-test-file.js && open __test__.html",
+    "hmr": "yarn run webpack-dev-server -- --config examples/hmr/webpack.config.js"
+  },
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "standard": {
+    "ignore": [
+      "**/bundle.js"
+    ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "standard": "^10.0.3",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
