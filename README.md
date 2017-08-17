@@ -14,8 +14,14 @@ yarn install
 
 **rebuild each webpack configs under `/examples` :**
 
-```
+```sh
 yarn build
+```
+
+**build a single config:**
+
+```sh
+yarn run webpack -- --config examples/[example-folder]/webpack.config.js
 ```
 
 ## test
