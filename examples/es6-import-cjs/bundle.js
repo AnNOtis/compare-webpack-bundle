@@ -83,7 +83,7 @@ __WEBPACK_IMPORTED_MODULE_0__modules_cjs_module___default()()
 
 var name = 'cjs-module.js'
 
-function cModule () {
+var cModule = function cModule () {
   console.log('This is ' + name + ' with common.js export syntax')
 }
 

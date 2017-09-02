@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const cjsModule = __webpack_require__(1)
+var cjsModule = __webpack_require__(1)
 
 console.log(cjsModule.name)
 cjsModule()
@@ -79,7 +79,7 @@ cjsModule()
 
 var name = 'cjs-module.js'
 
-function cModule () {
+var cModule = function cModule () {
   console.log('This is ' + name + ' with common.js export syntax')
 }
 

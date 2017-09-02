@@ -65,21 +65,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_es6_module__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_cjs_module__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_cjs_module___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__modules_cjs_module__);
+var es6Module = __webpack_require__(1)
+var cjsModule = __webpack_require__(2)
 
+console.log(es6Module.name)
+es6Module.default()
 
-
-console.log(__WEBPACK_IMPORTED_MODULE_0__modules_es6_module__["b" /* name */])
-Object(__WEBPACK_IMPORTED_MODULE_0__modules_es6_module__["a" /* default */])()
-
-console.log(__WEBPACK_IMPORTED_MODULE_1__modules_cjs_module___default.a.name)
-__WEBPACK_IMPORTED_MODULE_1__modules_cjs_module___default()()
+console.log(cjsModule.name)
+cjsModule()
 
 
 /***/ }),
@@ -87,13 +82,14 @@ __WEBPACK_IMPORTED_MODULE_1__modules_cjs_module___default()()
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Named export
 const name = 'es6-module.js'
-/* harmony export (immutable) */ __webpack_exports__["b"] = name;
+/* harmony export (immutable) */ __webpack_exports__["name"] = name;
 
 
 // Default export
-/* harmony default export */ __webpack_exports__["a"] = (function () {
+/* harmony default export */ __webpack_exports__["default"] = (function () {
   console.log('This is ' + name + ' with ES6(harmony) export syntax')
 });
 

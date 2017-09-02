@@ -1,4 +1,4 @@
-const cjsModule = require('../../modules/cjs-module')
+var cjsModule = require('../../modules/cjs-module')
 
 console.log(cjsModule.name)
 cjsModule()

@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1a06444d192933ea3c39"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9657520e15cfde1280a0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -764,7 +764,7 @@ const name = 'es6-module.js'
 
 var name = 'cjs-module.js'
 
-function cModule () {
+var cModule = function cModule () {
   console.log('This is ' + name + ' with common.js export syntax')
 }
 

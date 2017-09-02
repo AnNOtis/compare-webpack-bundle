@@ -1,6 +1,6 @@
 var name = 'cjs-module.js'
 
-function cModule () {
+var cModule = function cModule () {
   console.log('This is ' + name + ' with common.js export syntax')
 }
 
